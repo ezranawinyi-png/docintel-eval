@@ -1,0 +1,665 @@
+{
+  "config": {
+    "n_docs": 60,
+    "n_queries": 720
+  },
+  "retrieval": [
+    {
+      "strategy": "fixed-50",
+      "retriever": "bm25",
+      "contextual": false,
+      "n_chunks": 264,
+      "n_queries": 720,
+      "recall@1": 0.2611111111111111,
+      "recall@3": 0.30694444444444446,
+      "recall@5": 0.3111111111111111,
+      "mrr@10": 0.28519841269841273,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.3111111111111111,
+        "paraphrased": 0.3111111111111111
+      },
+      "build_ms": 7.29587600000059,
+      "query_ms_mean": 0.09384441111200835,
+      "query_ms_p95": 0.1949620000232244
+    },
+    {
+      "strategy": "fixed-50",
+      "retriever": "char-tfidf",
+      "contextual": false,
+      "n_chunks": 264,
+      "n_queries": 720,
+      "recall@1": 0.25555555555555554,
+      "recall@3": 0.30972222222222223,
+      "recall@5": 0.3138888888888889,
+      "mrr@10": 0.2830131172839506,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.3138888888888889,
+        "paraphrased": 0.3138888888888889
+      },
+      "build_ms": 27.79512600000089,
+      "query_ms_mean": 0.5697095499987389,
+      "query_ms_p95": 0.9418850000315615
+    },
+    {
+      "strategy": "fixed-50",
+      "retriever": "hybrid-rrf",
+      "contextual": false,
+      "n_chunks": 264,
+      "n_queries": 720,
+      "recall@1": 0.2625,
+      "recall@3": 0.30694444444444446,
+      "recall@5": 0.3111111111111111,
+      "mrr@10": 0.28609953703703705,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.3111111111111111,
+        "paraphrased": 0.3111111111111111
+      },
+      "build_ms": 32.26522699998213,
+      "query_ms_mean": 0.7080165097218267,
+      "query_ms_p95": 1.196456999991824
+    },
+    {
+      "strategy": "fixed-50",
+      "retriever": "bm25",
+      "contextual": true,
+      "n_chunks": 264,
+      "n_queries": 720,
+      "recall@1": 0.30833333333333335,
+      "recall@3": 0.6402777777777777,
+      "recall@5": 0.8305555555555556,
+      "mrr@10": 0.5139230599647261,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.8444444444444444,
+        "paraphrased": 0.8166666666666667
+      },
+      "build_ms": 7.6444419999575075,
+      "query_ms_mean": 0.11360322222376201,
+      "query_ms_p95": 0.19384800003763303
+    },
+    {
+      "strategy": "fixed-50",
+      "retriever": "char-tfidf",
+      "contextual": true,
+      "n_chunks": 264,
+      "n_queries": 720,
+      "recall@1": 0.23333333333333334,
+      "recall@3": 0.5694444444444444,
+      "recall@5": 0.7652777777777777,
+      "mrr@10": 0.4463817239858903,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.7944444444444444,
+        "paraphrased": 0.7361111111111112
+      },
+      "build_ms": 32.185809999987214,
+      "query_ms_mean": 0.6942327319436004,
+      "query_ms_p95": 1.1502400000154012
+    },
+    {
+      "strategy": "fixed-50",
+      "retriever": "hybrid-rrf",
+      "contextual": true,
+      "n_chunks": 264,
+      "n_queries": 720,
+      "recall@1": 0.29305555555555557,
+      "recall@3": 0.6486111111111111,
+      "recall@5": 0.8166666666666667,
+      "mrr@10": 0.5042967372134033,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.8444444444444444,
+        "paraphrased": 0.7888888888888889
+      },
+      "build_ms": 39.8548029999688,
+      "query_ms_mean": 0.9505059805567682,
+      "query_ms_p95": 1.5447490000042308
+    },
+    {
+      "strategy": "fixed-50+overlap",
+      "retriever": "bm25",
+      "contextual": false,
+      "n_chunks": 381,
+      "n_queries": 720,
+      "recall@1": 0.2611111111111111,
+      "recall@3": 0.30694444444444446,
+      "recall@5": 0.3111111111111111,
+      "mrr@10": 0.285,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.3111111111111111,
+        "paraphrased": 0.3111111111111111
+      },
+      "build_ms": 10.916581000003589,
+      "query_ms_mean": 0.12829897777824803,
+      "query_ms_p95": 0.25536100002909734
+    },
+    {
+      "strategy": "fixed-50+overlap",
+      "retriever": "char-tfidf",
+      "contextual": false,
+      "n_chunks": 381,
+      "n_queries": 720,
+      "recall@1": 0.25972222222222224,
+      "recall@3": 0.30833333333333335,
+      "recall@5": 0.3111111111111111,
+      "mrr@10": 0.28463128306878305,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.3111111111111111,
+        "paraphrased": 0.3111111111111111
+      },
+      "build_ms": 39.1827739999826,
+      "query_ms_mean": 1.0808464055551938,
+      "query_ms_p95": 1.7612290000101893
+    },
+    {
+      "strategy": "fixed-50+overlap",
+      "retriever": "hybrid-rrf",
+      "contextual": false,
+      "n_chunks": 381,
+      "n_queries": 720,
+      "recall@1": 0.2625,
+      "recall@3": 0.30694444444444446,
+      "recall@5": 0.3111111111111111,
+      "mrr@10": 0.28586419753086423,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.3111111111111111,
+        "paraphrased": 0.3111111111111111
+      },
+      "build_ms": 47.83446199996888,
+      "query_ms_mean": 1.5587098638888284,
+      "query_ms_p95": 2.694378000001052
+    },
+    {
+      "strategy": "fixed-50+overlap",
+      "retriever": "bm25",
+      "contextual": true,
+      "n_chunks": 381,
+      "n_queries": 720,
+      "recall@1": 0.3138888888888889,
+      "recall@3": 0.6805555555555556,
+      "recall@5": 0.8333333333333334,
+      "mrr@10": 0.5302055776014101,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.8555555555555555,
+        "paraphrased": 0.8111111111111111
+      },
+      "build_ms": 13.580219000004945,
+      "query_ms_mean": 0.1695935319459194,
+      "query_ms_p95": 0.30340099999648373
+    },
+    {
+      "strategy": "fixed-50+overlap",
+      "retriever": "char-tfidf",
+      "contextual": true,
+      "n_chunks": 381,
+      "n_queries": 720,
+      "recall@1": 0.2652777777777778,
+      "recall@3": 0.6611111111111111,
+      "recall@5": 0.8430555555555556,
+      "mrr@10": 0.4970359347442677,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.8972222222222223,
+        "paraphrased": 0.7888888888888889
+      },
+      "build_ms": 47.32179799998448,
+      "query_ms_mean": 1.3425894458327055,
+      "query_ms_p95": 2.1834690000446244
+    },
+    {
+      "strategy": "fixed-50+overlap",
+      "retriever": "hybrid-rrf",
+      "contextual": true,
+      "n_chunks": 381,
+      "n_queries": 720,
+      "recall@1": 0.3,
+      "recall@3": 0.7013888888888888,
+      "recall@5": 0.8708333333333333,
+      "mrr@10": 0.5320370370370361,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.9222222222222223,
+        "paraphrased": 0.8194444444444444
+      },
+      "build_ms": 58.99838599998475,
+      "query_ms_mean": 1.5441827944454662,
+      "query_ms_p95": 2.42897099997208
+    },
+    {
+      "strategy": "paragraph",
+      "retriever": "bm25",
+      "contextual": false,
+      "n_chunks": 842,
+      "n_queries": 720,
+      "recall@1": 0.0,
+      "recall@3": 0.1361111111111111,
+      "recall@5": 0.16944444444444445,
+      "mrr@10": 0.07474261463844799,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.17777777777777778,
+        "paraphrased": 0.16111111111111112
+      },
+      "build_ms": 8.248815999991166,
+      "query_ms_mean": 0.13611724166690603,
+      "query_ms_p95": 0.2749020000010205
+    },
+    {
+      "strategy": "paragraph",
+      "retriever": "char-tfidf",
+      "contextual": false,
+      "n_chunks": 842,
+      "n_queries": 720,
+      "recall@1": 0.0,
+      "recall@3": 0.11666666666666667,
+      "recall@5": 0.15,
+      "mrr@10": 0.06737709435626106,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.14444444444444443,
+        "paraphrased": 0.15555555555555556
+      },
+      "build_ms": 28.775089999953707,
+      "query_ms_mean": 1.127631491667971,
+      "query_ms_p95": 1.9058269999732147
+    },
+    {
+      "strategy": "paragraph",
+      "retriever": "hybrid-rrf",
+      "contextual": false,
+      "n_chunks": 842,
+      "n_queries": 720,
+      "recall@1": 0.0,
+      "recall@3": 0.12361111111111112,
+      "recall@5": 0.16111111111111112,
+      "mrr@10": 0.07068452380952385,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.15833333333333333,
+        "paraphrased": 0.1638888888888889
+      },
+      "build_ms": 39.95670700004439,
+      "query_ms_mean": 1.380663186111914,
+      "query_ms_p95": 2.309253999953853
+    },
+    {
+      "strategy": "paragraph",
+      "retriever": "bm25",
+      "contextual": true,
+      "n_chunks": 842,
+      "n_queries": 720,
+      "recall@1": 0.3194444444444444,
+      "recall@3": 0.5319444444444444,
+      "recall@5": 0.6652777777777777,
+      "mrr@10": 0.4699085097001762,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.7361111111111112,
+        "paraphrased": 0.5944444444444444
+      },
+      "build_ms": 13.06915600002867,
+      "query_ms_mean": 0.31259038889028073,
+      "query_ms_p95": 0.7662620000132847
+    },
+    {
+      "strategy": "paragraph",
+      "retriever": "char-tfidf",
+      "contextual": true,
+      "n_chunks": 842,
+      "n_queries": 720,
+      "recall@1": 0.3013888888888889,
+      "recall@3": 0.5736111111111111,
+      "recall@5": 0.6972222222222222,
+      "mrr@10": 0.4712792107583767,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.7694444444444445,
+        "paraphrased": 0.625
+      },
+      "build_ms": 71.70477299996492,
+      "query_ms_mean": 1.9407987541669849,
+      "query_ms_p95": 3.3670660000097996
+    },
+    {
+      "strategy": "paragraph",
+      "retriever": "hybrid-rrf",
+      "contextual": true,
+      "n_chunks": 842,
+      "n_queries": 720,
+      "recall@1": 0.3611111111111111,
+      "recall@3": 0.6013888888888889,
+      "recall@5": 0.7041666666666667,
+      "mrr@10": 0.5143127204585534,
+      "recall@5_by_variant": {
+        "lexical-overlap": 0.7611111111111111,
+        "paraphrased": 0.6472222222222223
+      },
+      "build_ms": 59.64392900000348,
+      "query_ms_mean": 2.4655054749982717,
+      "query_ms_p95": 4.3006379999610544
+    }
+  ],
+  "extraction": {
+    "standard": {
+      "regex-v1": {
+        "accuracy_by_field": {
+          "effective_date": 0.3,
+          "term_months": 0.48333333333333334,
+          "payment_days": 0.5,
+          "notice_days": 0.2833333333333333,
+          "governing_law": 0.5333333333333333,
+          "liability_cap": 0.36666666666666664
+        },
+        "accuracy": 0.4111111111111111,
+        "precision": 0.6141078838174274,
+        "recall": 0.4111111111111111,
+        "f1": 0.4925124792013311,
+        "wrong_values": 93,
+        "missed_values": 119,
+        "error_examples": [
+          {
+            "doc": "doc002",
+            "field": "notice_days",
+            "gold": 60,
+            "pred": 5
+          },
+          {
+            "doc": "doc003",
+            "field": "notice_days",
+            "gold": 90,
+            "pred": 5
+          },
+          {
+            "doc": "doc003",
+            "field": "liability_cap",
+            "gold": 500000,
+            "pred": 1000000
+          },
+          {
+            "doc": "doc004",
+            "field": "liability_cap",
+            "gold": 50000,
+            "pred": 1000000
+          },
+          {
+            "doc": "doc005",
+            "field": "payment_days",
+            "gold": 30,
+            "pred": 21
+          },
+          {
+            "doc": "doc005",
+            "field": "notice_days",
+            "gold": 90,
+            "pred": 5
+          },
+          {
+            "doc": "doc005",
+            "field": "liability_cap",
+            "gold": 100000,
+            "pred": 1000000
+          },
+          {
+            "doc": "doc006",
+            "field": "payment_days",
+            "gold": 45,
+            "pred": 14
+          }
+        ]
+      },
+      "regex-v2": {
+        "accuracy_by_field": {
+          "effective_date": 1.0,
+          "term_months": 1.0,
+          "payment_days": 1.0,
+          "notice_days": 1.0,
+          "governing_law": 1.0,
+          "liability_cap": 1.0
+        },
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "wrong_values": 0,
+        "missed_values": 0,
+        "error_examples": []
+      }
+    },
+    "shifted (held-out phrasing)": {
+      "regex-v1": {
+        "accuracy_by_field": {
+          "effective_date": 0.18333333333333332,
+          "term_months": 0.9,
+          "payment_days": 0.13333333333333333,
+          "notice_days": 0.3,
+          "governing_law": 0.15,
+          "liability_cap": 0.08333333333333333
+        },
+        "accuracy": 0.2916666666666667,
+        "precision": 0.4605263157894737,
+        "recall": 0.2916666666666667,
+        "f1": 0.35714285714285715,
+        "wrong_values": 123,
+        "missed_values": 132,
+        "error_examples": [
+          {
+            "doc": "doc000",
+            "field": "liability_cap",
+            "gold": 500000,
+            "pred": 1000000
+          },
+          {
+            "doc": "doc001",
+            "field": "payment_days",
+            "gold": 45,
+            "pred": 14
+          },
+          {
+            "doc": "doc001",
+            "field": "liability_cap",
+            "gold": 100000,
+            "pred": 1000000
+          },
+          {
+            "doc": "doc002",
+            "field": "payment_days",
+            "gold": 60,
+            "pred": 21
+          },
+          {
+            "doc": "doc002",
+            "field": "notice_days",
+            "gold": 90,
+            "pred": 10
+          },
+          {
+            "doc": "doc002",
+            "field": "liability_cap",
+            "gold": 500000,
+            "pred": 500
+          },
+          {
+            "doc": "doc003",
+            "field": "payment_days",
+            "gold": 60,
+            "pred": 21
+          },
+          {
+            "doc": "doc003",
+            "field": "liability_cap",
+            "gold": 100000,
+            "pred": 100
+          }
+        ]
+      },
+      "regex-v2": {
+        "accuracy_by_field": {
+          "effective_date": 0.3333333333333333,
+          "term_months": 0.25,
+          "payment_days": 0.35,
+          "notice_days": 0.25,
+          "governing_law": 0.31666666666666665,
+          "liability_cap": 0.3
+        },
+        "accuracy": 0.3,
+        "precision": 0.72,
+        "recall": 0.3,
+        "f1": 0.4235294117647059,
+        "wrong_values": 42,
+        "missed_values": 210,
+        "error_examples": [
+          {
+            "doc": "doc001",
+            "field": "liability_cap",
+            "gold": 100000,
+            "pred": 100
+          },
+          {
+            "doc": "doc002",
+            "field": "liability_cap",
+            "gold": 500000,
+            "pred": 500
+          },
+          {
+            "doc": "doc003",
+            "field": "liability_cap",
+            "gold": 100000,
+            "pred": 100
+          },
+          {
+            "doc": "doc004",
+            "field": "liability_cap",
+            "gold": 500000,
+            "pred": 500
+          },
+          {
+            "doc": "doc005",
+            "field": "liability_cap",
+            "gold": 1000000,
+            "pred": 1000
+          },
+          {
+            "doc": "doc008",
+            "field": "liability_cap",
+            "gold": 1000000,
+            "pred": 1000
+          },
+          {
+            "doc": "doc009",
+            "field": "liability_cap",
+            "gold": 50000,
+            "pred": 50
+          },
+          {
+            "doc": "doc010",
+            "field": "liability_cap",
+            "gold": 1000000,
+            "pred": 1000
+          }
+        ]
+      }
+    }
+  },
+  "e2e": {
+    "standard": {
+      "baseline (no entity scoping, no expansion)": {
+        "n_queries": 720,
+        "accuracy": 0.7097222222222223,
+        "wrong_rate": 0.21944444444444444,
+        "abstain_rate": 0.07083333333333333,
+        "accuracy_when_answered": 0.7638266068759342,
+        "accuracy_by_field": {
+          "effective_date": 0.7833333333333333,
+          "term_months": 0.5583333333333333,
+          "payment_days": 0.7333333333333333,
+          "notice_days": 0.6583333333333333,
+          "governing_law": 0.775,
+          "liability_cap": 0.75
+        },
+        "query_ms_mean": 2.061144816665382,
+        "query_ms_p95": 3.2035899999982576
+      },
+      "+ entity scoping": {
+        "n_queries": 720,
+        "accuracy": 0.9625,
+        "wrong_rate": 0.0,
+        "abstain_rate": 0.0375,
+        "accuracy_when_answered": 1.0,
+        "accuracy_by_field": {
+          "effective_date": 1.0,
+          "term_months": 0.9583333333333334,
+          "payment_days": 0.9916666666666667,
+          "notice_days": 0.925,
+          "governing_law": 1.0,
+          "liability_cap": 0.9
+        },
+        "query_ms_mean": 1.8696011305542646,
+        "query_ms_p95": 2.7907969999887428
+      },
+      "+ entity scoping + query expansion": {
+        "n_queries": 720,
+        "accuracy": 1.0,
+        "wrong_rate": 0.0,
+        "abstain_rate": 0.0,
+        "accuracy_when_answered": 1.0,
+        "accuracy_by_field": {
+          "effective_date": 1.0,
+          "term_months": 1.0,
+          "payment_days": 1.0,
+          "notice_days": 1.0,
+          "governing_law": 1.0,
+          "liability_cap": 1.0
+        },
+        "query_ms_mean": 2.8479563736122295,
+        "query_ms_p95": 4.140456000016002
+      }
+    },
+    "shifted (held-out phrasing)": {
+      "baseline (no entity scoping, no expansion)": {
+        "n_queries": 720,
+        "accuracy": 0.23194444444444445,
+        "wrong_rate": 0.375,
+        "abstain_rate": 0.39305555555555555,
+        "accuracy_when_answered": 0.38215102974828374,
+        "accuracy_by_field": {
+          "effective_date": 0.30833333333333335,
+          "term_months": 0.175,
+          "payment_days": 0.275,
+          "notice_days": 0.14166666666666666,
+          "governing_law": 0.26666666666666666,
+          "liability_cap": 0.225
+        },
+        "query_ms_mean": 2.0271315236098215,
+        "query_ms_p95": 3.1490300000314164
+      },
+      "+ entity scoping": {
+        "n_queries": 720,
+        "accuracy": 0.28888888888888886,
+        "wrong_rate": 0.11666666666666667,
+        "abstain_rate": 0.5944444444444444,
+        "accuracy_when_answered": 0.7123287671232876,
+        "accuracy_by_field": {
+          "effective_date": 0.3333333333333333,
+          "term_months": 0.225,
+          "payment_days": 0.35,
+          "notice_days": 0.225,
+          "governing_law": 0.31666666666666665,
+          "liability_cap": 0.2833333333333333
+        },
+        "query_ms_mean": 2.285855963889342,
+        "query_ms_p95": 3.5496660000262636
+      },
+      "+ entity scoping + query expansion": {
+        "n_queries": 720,
+        "accuracy": 0.3,
+        "wrong_rate": 0.11666666666666667,
+        "abstain_rate": 0.5833333333333334,
+        "accuracy_when_answered": 0.72,
+        "accuracy_by_field": {
+          "effective_date": 0.3333333333333333,
+          "term_months": 0.25,
+          "payment_days": 0.35,
+          "notice_days": 0.25,
+          "governing_law": 0.31666666666666665,
+          "liability_cap": 0.3
+        },
+        "query_ms_mean": 3.0183059652795268,
+        "query_ms_p95": 4.4459640000127365
+      }
+    }
+  },
+  "llm_token_budget": {
+    "input_tokens_per_doc": 568,
+    "output_tokens_per_doc": 80
+  }
+}

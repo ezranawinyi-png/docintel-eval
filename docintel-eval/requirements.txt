@@ -1,0 +1,5 @@
+# The core pipeline and benchmark use only the standard library.
+# These are needed only for the HTTP API:
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.0
